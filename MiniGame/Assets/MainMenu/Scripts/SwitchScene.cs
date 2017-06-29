@@ -5,13 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SwitchScene : MonoBehaviour {
 
-    public void Awake()
+    public void SwitchTo(string scene)
     {
-        OnClick();
-    }
-
-    public void OnClick()
-    {
-        SceneManager.LoadScene("Avalanche");
+        SceneManager.LoadScene(scene);
     }
 }

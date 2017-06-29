@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MainMenu/Scenes/MainMenuScene.unity
+- path: Assets/Avelanche/Scenes/Avalanche.unity
   isLoaded: 1
   isActive: 1
