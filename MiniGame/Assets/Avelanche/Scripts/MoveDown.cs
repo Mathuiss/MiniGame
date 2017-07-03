@@ -6,13 +6,7 @@ public class MoveDown : MonoBehaviour {
 
     private float speed = -0.1f;
     
-
-    // Use this for initialization
-    void Start()
-    {
-        
-	}
-	
+    //When the prefab passes these vectors it will transform it's position back to this range (top of the screen)
     public void Reset()
     {
         Vector2 linkerGrens = new Vector2(-2.5f, 6);
@@ -21,7 +15,10 @@ public class MoveDown : MonoBehaviour {
     }
 
 	// Update is called once per frame
-	void Update () {
+
+	void Update ()
+    {
+        //the position of the object constantly moves down
         transform.position += new Vector3(0, speed, 0);
 
         if (transform.position.y <= -6f)

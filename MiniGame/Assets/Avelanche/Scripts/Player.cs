@@ -5,11 +5,18 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    PolygonCollider2D collider;
+
     [SerializeField]
     private float speed;
     private float linkerGrens = -2.5f;
     private float rechterGrens = 2.5f;
     private Vector2 velocity;
+
+    void Start()
+    {
+        collider = GetComponent<PolygonCollider2D>();
+    }
     
     public void Update()
     {

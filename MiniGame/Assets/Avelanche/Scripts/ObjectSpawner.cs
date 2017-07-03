@@ -13,6 +13,11 @@ public class ObjectSpawner : MonoBehaviour {
     private int numTree02;
     [SerializeField]
     private GameObject tree_02;
+
+    [SerializeField]
+    private int numSteen;
+    [SerializeField]
+    private GameObject steen;
     
 
     private float waitTime = 1f;
@@ -20,11 +25,11 @@ public class ObjectSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        SpawnObject(tree_01, tree_02);
+        SpawnObject(tree_01, tree_02, steen);
 	}
 
 
-    public void SpawnObject(GameObject tree_01, GameObject tree_02)
+    public void SpawnObject(GameObject tree_01, GameObject tree_02, GameObject steen)
     {
         float linkerGrens = -2.5f;
         float rechterGrens = 2.5f;
@@ -43,6 +48,13 @@ public class ObjectSpawner : MonoBehaviour {
             float xPositie = Random.Range(linkerGrens, rechterGrens);
             float yPositie = Random.Range(bovenGrens, onderGrens);
             Instantiate(tree_02, new Vector3(xPositie, yPositie, 0f), transform.rotation);
+        }
+
+        for (int i = 0; i < numSteen; i++)
+        {
+            float xPositie = Random.Range(linkerGrens, rechterGrens);
+            float yPositie = Random.Range(bovenGrens, onderGrens);
+            Instantiate(steen, new Vector3(xPositie, yPositie, 0f), transform.rotation);
         }
     }
 }
