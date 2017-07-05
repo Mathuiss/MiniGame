@@ -381,19 +381,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Avelanche
+    - Assets/Avalanche
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Avelanche
+  - Assets/Avalanche
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\MiniGame\MiniGame
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 50250000
-    m_LastClickedID: 9552
-    m_ExpandedIDs: 00000000ba2400002e2500005025000000ca9a3bffffff7f
+    m_SelectedIDs: 5c250000
+    m_LastClickedID: 9564
+    m_ExpandedIDs: 00000000c42400003a2500005c25000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -421,7 +421,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ba2400002e25000050250000
+    m_ExpandedIDs: 00000000c42400003a2500005c250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -579,14 +579,14 @@ MonoBehaviour:
     width: 938
     height: 710
   m_SceneLighting: 1
-  lastFramingTime: 18844.192138076043
+  lastFramingTime: 59556.31594830807
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.48264685, y: 0.7978325, z: 0}
+    m_Target: {x: -0.7642102, y: 0.697309, z: 0}
     speed: 2
-    m_Value: {x: 0.48264685, y: 0.7978325, z: 0}
+    m_Value: {x: -0.7642102, y: 0.697309, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -613,9 +613,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 15.550531
+    m_Target: 12.027918
     speed: 2
-    m_Value: 15.550531
+    m_Value: 12.027918
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -654,9 +654,9 @@ MonoBehaviour:
     height: 395
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 38060000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: e4fbffff00000000
+    m_ExpandedIDs: 4e4bfcff5272fcffce72fcff4a73fcffe27bfcffe89efcff32aafcffb4affcffb4b3fcff34c3fcffdcfbffff0000000084250000b43b0000503d0000ec3e0000ea410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
