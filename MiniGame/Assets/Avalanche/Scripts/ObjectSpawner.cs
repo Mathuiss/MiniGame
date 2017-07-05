@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class ObjectSpawner : MonoBehaviour {
 
+    /// <summary>
+    /// These field are here to load GameObjects into these variables
+    /// The number of GameObject are also loaded to variables
+    /// Only the yeti GameObject is loaded differently
+    /// </summary>
+
     [SerializeField]
     private int numTree01;
     [SerializeField]
@@ -32,7 +38,10 @@ public class ObjectSpawner : MonoBehaviour {
     [SerializeField]
     private GameObject yeti;
     
-
+    /// <summary>
+    /// waitTime is the time it takes to spawn another yeti
+    /// The borders are ment to indicate a region in which a GameObject can be spawned
+    /// </summary>
     private float waitTime = 10f;
 
     private float linkerGrens = -2.5f;
@@ -41,12 +50,24 @@ public class ObjectSpawner : MonoBehaviour {
     private float onderGrens = 6f;
 
 
-    // Use this for initialization
+    /// <summary>
+    /// Start initiates the spawning process
+    /// StartCoroutine spawns a yeti every waitTime seconds
+    /// </summary>
     void Start () {
         SpawnObject(tree_01, tree_02, steen, treeStomp, ramp);
         StartCoroutine(SpawnYeti());
 	}
 
+    /// <summary>
+    /// The reason this code looks redundant is because every time an object is spawned it needs to get a new position
+    /// Else where would have been many GameObjects spawned at the same location
+    /// </summary>
+    /// <param name="tree_01">A tall tree</param>
+    /// <param name="tree_02">A short tree</param>
+    /// <param name="steen">A rock</param>
+    /// <param name="treeStomp">A cut down tree</param>
+    /// <param name="ramp">A potential ramp. Maybe in the future a ramp can be made out of this object</param>
     public void SpawnObject(GameObject tree_01, GameObject tree_02, GameObject steen, GameObject treeStomp, GameObject ramp)
     {
         for (int i = 0; i < numTree01; i++)
@@ -85,6 +106,13 @@ public class ObjectSpawner : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// This IEnumerator creates a range in which it can later spawn a yeti
+    /// It waits a waitTime amount of seconds
+    /// When it will instantiate the prefab yeti on the coordinates from the generated range
+    /// transform.rotation is nessecary in order to avoid errors
+    /// </summary>
+    /// <returns></returns>
     IEnumerator SpawnYeti()
     {
         while (SceneManager.GetActiveScene().name == "Avalanche")

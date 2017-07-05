@@ -11,13 +11,20 @@ public class Counter : MonoBehaviour
     float waitTime = 0.25f;
     int points = 0;
 
-    // Use this for initialization
+    /// <summary>
+    /// Initiates the coroutine and then updates the score
+    /// </summary>
     void Start()
     {
         StartCoroutine(Count());
         UpdateScore();
     }
 
+    /// <summary>
+    /// The IEnumerator is a coroutine to add points to score and save them to the playerprefs every given time
+    /// Next the score will be updated
+    /// Score will be saved to the playerprefs as a string
+    /// </summary>
     IEnumerator Count()
     {
         while (SceneManager.GetActiveScene().name == "Avalanche")
@@ -29,6 +36,9 @@ public class Counter : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Updates the score throughout the process and converts it to a string
+    /// </summary>
     void UpdateScore()
     {
         score = "Score: " + points;
